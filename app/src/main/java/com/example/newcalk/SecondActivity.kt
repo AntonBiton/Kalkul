@@ -1,5 +1,6 @@
 package com.example.newcalk
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -28,4 +29,12 @@ class SecondActivity : AppCompatActivity() {
     fun onClkButton(view: View) {
         binding.txtRnd.text = "нажали кнопку"
     }
+
+    fun deadSecAct(view: View){
+        this.finish()
+        val randomIntent = Intent(this, MainActivity::class.java)
+        
+        startActivity(randomIntent)
+    }
+
 }
