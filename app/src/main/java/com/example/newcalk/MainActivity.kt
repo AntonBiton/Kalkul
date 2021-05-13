@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.keyC.setOnClickListener{
             binding.txtVvod.text = "".toString()
-            binding.txtVivod.text = "CE".toString()
+            binding.txtVivod.text = "0".toString()
         }
 
 
@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
 
     fun randomMe(){
         val randomIntent = Intent(this, SecondActivity::class.java)
-        val countString = binding.txtVivod.text.toString()
+        var countString = binding.txtVivod.text.toString()
         val count = Integer.parseInt(countString)
         randomIntent.putExtra(SecondActivity.TOTAL_COUNT, count)
 

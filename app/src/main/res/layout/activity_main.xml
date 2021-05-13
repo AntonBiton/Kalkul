@@ -20,7 +20,7 @@
         android:layout_height="100dp"
         android:textSize="60dp"
         android:id="@+id/txt_vivod"
-        android:text=""/>
+        android:text="0"/>
 
 
 
