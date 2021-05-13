@@ -41,7 +41,7 @@
                 />
             <TextView
                 style="@style/duoitee"
-                android:text="CE"
+                android:text="NA"
                 android:id="@+id/keyCE"
                 />
             <TextView

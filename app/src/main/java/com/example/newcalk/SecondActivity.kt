@@ -2,6 +2,7 @@ package com.example.newcalk
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.newcalk.databinding.ActivitySecondBinding
 
 import kotlin.random.Random
@@ -24,5 +25,7 @@ class SecondActivity : AppCompatActivity() {
         const val TOTAL_COUNT = "total_count"
     }
 
-
+    fun onClkButton(view: View) {
+        binding.txtRnd.text = "нажали кнопку"
+    }
 }
