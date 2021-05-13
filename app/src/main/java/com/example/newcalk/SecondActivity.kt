@@ -32,8 +32,9 @@ class SecondActivity : AppCompatActivity() {
 
     fun deadSecAct(view: View){
         this.finish()
-        val randomIntent = Intent(this, MainActivity::class.java)
         
+        val randomIntent = Intent(this, MainActivity::class.java)
+
         startActivity(randomIntent)
     }
 
